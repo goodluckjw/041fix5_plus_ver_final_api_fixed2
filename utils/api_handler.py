@@ -1,0 +1,1 @@
+# placeholder for fetch_law_list_and_detail
