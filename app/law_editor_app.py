@@ -3,7 +3,9 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import streamlit as st
-from utils.xml_parser import parse_law_xml, filter_by_logic
+from utils import xml_parser
+parse_law_xml = xml_parser.parse_law_xml
+filter_by_logic = xml_parser.filter_by_logic
 from utils.api_handler import fetch_law_list_and_detail
 
 st.set_page_config(layout="wide")
